@@ -5,10 +5,12 @@ const cookieParsel = require("cookie-parser")
 app.use(express.json())
 app.use(cookieParsel())
 
-const products = require("./Routes/productRoute")
+const product = require("./Routes/productRoute")
+const user = require("./Routes/userRoute")
 
-app.use("/api/v1", products)
+app.use("/api/v1", product)
 
+app.use("/api/v1", user)
 
 const errorMiddleware = require("./Middleware/Error")
 
