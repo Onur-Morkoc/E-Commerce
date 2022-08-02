@@ -39,7 +39,7 @@ const productSchame = mongoose.Schema({
         type: Number,
         required: [true, "Please Enter Product Stock"],
         maxLength: [8, "Stock Cannot Exceed 8 Characters"],
-        default:1
+        default: 1
     },
     numOfReviews: {
         type: Number,
@@ -58,6 +58,11 @@ const productSchame = mongoose.Schema({
             }
         }
     ],
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now()
