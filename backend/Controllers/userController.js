@@ -218,3 +218,19 @@ exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
     })
 
 })
+
+// Delete User -- Admin
+exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
+
+    const user = await User.findById(req.params.id)
+
+    if (!user) return next(new ErrorHander(`User Does Not Exist With Id: ${req.params.id}`, 500))
+
+    await user.remove()
+
+    res.status(200).json({
+        success: true,
+        message: "User Deleted Successfully"
+    })
+
+})
