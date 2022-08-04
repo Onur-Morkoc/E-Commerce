@@ -39,7 +39,7 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
     sendToken(user, 201, res)
 })
 
-//Logout User
+// Logout User
 exports.logout = catchAsyncErrors(async (req, res, next) => {
     res.cookie("token", null, {
         expires: new Date(Date.now()),
@@ -52,7 +52,7 @@ exports.logout = catchAsyncErrors(async (req, res, next) => {
     })
 })
 
-
+// Forgot Password
 exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findOne({ email: req.body.email })
 
@@ -116,13 +116,17 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 
 })
 
+// Get User Details
+exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
 
+    const user = await User.findById(req.user.id)
 
+    if (!user) return next(new ErrorHander("User Not Found", 500))
 
+    res.status(200).json({
+        success: true,
+        user
+    })
 
-
-
-
-
-
+})
 
