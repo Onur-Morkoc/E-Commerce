@@ -1,0 +1,12 @@
+.edit,
+.delete {
+    padding: 5px 10px;
+    cursor: pointer;
+    svg{
+        width: 1.5vmax;
+        height: 1.5vmax;
+    }
+    &:hover{
+        color: tomato;
+    }
+}

@@ -1,0 +1,52 @@
+.CheckoutSteps{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 50vmax;
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+
+    .step-line{
+        background-color:rgb(201, 215, 205);
+        height: 2px;
+        width: 100%;
+        margin:10px;
+        margin-top: 15px;
+        z-index: 2;
+    }
+    .step{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 35px;
+        width: 90px;
+        border-radius: 50%;
+        z-index: 1;
+
+        .step-text{
+            position: absolute;
+            top: 40px;
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 1.2vmax;
+
+            &.active{
+                color: black;
+            }
+           
+        }
+
+        svg{
+            width: 24px;
+            height: 24px;
+         
+        }
+
+        .step-icon.active{
+            color: tomato;
+        }
+    }
+}

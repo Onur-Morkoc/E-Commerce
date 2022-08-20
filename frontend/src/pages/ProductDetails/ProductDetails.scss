@@ -1,0 +1,52 @@
+.productDetails {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    max-width: 100%;
+    padding: 90px 6vmax;
+    box-sizing: border-box;
+
+    >div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 25px;
+        box-sizing: border-box;
+
+
+        &:last-child {
+            align-items: flex-start;
+        }
+    }
+
+    .ımage {
+        // min-width: 280px;
+    }
+
+}
+
+.reviewsHeading {
+    color: #000;
+    font: 500 1.4vmax "Roboto";
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+
+
+
+@media screen and (max-width : 750px) {
+    .productDetails {
+        flex-direction: column;
+        height: unset;
+
+        >div:last-child {
+            align-items: center;
+        }
+    }
+}
