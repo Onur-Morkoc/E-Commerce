@@ -1,0 +1,34 @@
+.reviewCard{
+    flex: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+    border: 1px solid rgba(56, 56, 56, 0.116);
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+
+    > img {
+        width: 10vmax;
+    }
+
+    > p {
+        color: rgba(0, 0, 0, 0.836);
+        font: 600 0.9vmax "Roboto";
+    }
+    > span {
+        color: rgba(0, 0, 0, 0.5);
+        font: 300 0.8vmax cursive;
+    }
+}
+
+.reviews {
+    display: flex;
+    overflow: auto;
+}
+.noReviews {
+    color: rgba(0, 0, 0, 0.548);
+    font: 400 1.3vmax "Fell Sans";
+    text-align: center;
+}

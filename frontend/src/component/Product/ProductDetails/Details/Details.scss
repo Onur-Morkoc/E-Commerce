@@ -1,0 +1,195 @@
+.detailsBlock-1 {
+
+    >h2 {
+        color: rgb(54, 54, 54);
+        margin: 7px;
+        font: 600 1.6vmax "Roboto";
+    }
+
+    >p {
+        color: rgb(54, 54, 54, 0.582);
+        margin: 0;
+        font: 200 0.8vmax cursive;
+    }
+}
+
+.detailsBlock-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    width: 70%;
+    padding: 10px 0;
+
+    > span {
+        color: rgb(54, 54, 54, 0.582);
+        margin-bottom: 10px;
+        font: 200 0.8vmax cursive;
+    }
+
+    
+    > div {
+        margin: 5px;
+    }
+}
+
+.detailsBlock-3 {
+    width: 70%;
+
+    >p {
+        border-top: 1px solid rgba(0, 0, 0, 0.205);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+        padding: 10px 0;
+        color: rgba(0, 0, 0, 0.651);
+        font: 400 1vmax "Roboto";
+        margin: 10px 0;
+    }
+
+    >h1 {
+        color: rgb(17, 17, 17, 0.795);
+        font: 400 1.8vmax "Franklin Gothic Medium";
+        margin: 10px 0;
+    }
+
+    .detailsBlock-3-1 {
+        display: flex;
+        align-items: center;
+
+        >button:last-child {
+            border: navajowhite;
+            cursor: pointer;
+            color: white;
+            transition: all 0.5s;
+            background-color: tomato;
+            font: 500 0.8vmax "Roboto";
+            border-radius: 20px;
+            padding: 9px 25px;
+            margin: 10px;
+            outline: none;
+
+            &:hover {
+                background-color: rgb(214, 84, 61);
+            }
+        }
+
+        .detailsBlock-3-1-1 {
+
+             >button {
+                border: none;
+                background-color: rgba(0, 0, 0, 0.616);
+               // padding: 6px;
+                height: 26px;
+                width: 19px;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+
+            .decrease{
+                background-color: rgba(255, 0, 0,0.79)
+            }
+            .increase{
+                background-color: rgba(28, 141, 255,0.79);
+            }
+
+            >input {
+                border: none;
+                padding: 6px;
+                width: 15px;
+                text-align: center;
+                outline: none;
+                font: 400 1vmax "Roboto";
+                color: rgba(0, 0, 0, 0.74)
+            }
+
+            >button:hover {
+                transform: translateY(-0.2vmax);
+            }
+        }
+
+
+    }
+
+
+}
+
+
+.detailsBlock-4 {
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 1.2vmax "sans-serif";
+
+    >p {
+        padding-top: 5px;
+        color: rgba(0, 0, 0, 0.534);
+        font: 300 0.8vmax "sans-serif";
+
+    }
+}
+
+.submitReview {
+    border: none;
+    background-color: tomato;
+    font: 500 0.8vmax "Roboto";
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 25px 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+
+    &:hover {
+        background-color: rgb(197, 68, 45);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width : 750px) {
+
+
+    .detailsBlock-1 {
+
+        >h2 {
+            font-size: 2.8vmax;
+            text-align: center;
+        }
+
+        >p {
+            text-align: center;
+            font-size: 1vmax;
+        }
+
+    }
+
+    .detailsBlock-2 {
+        justify-content: center;
+
+        >span {
+            font-size: 1.5vmax;
+        }
+    }
+
+    .detailsBlock-3 {
+
+        >h1 {
+            font: 700 3vmax "Franklin Gothic Medium";
+            text-align: center;
+        }
+
+        .detailsBlock-3-1 {
+            flex-direction: column;
+
+            .detailsBlock-3-1-1 {
+                padding: 10px 0;
+
+                >button {
+                    padding: 1px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+
+
+}

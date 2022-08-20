@@ -1,0 +1,18 @@
+.homeHeading {
+    text-align: center;
+    border-bottom: 1px solid rgb(185, 171, 171);
+    width: 20vmax;
+    font-size: 1.6vmax;
+    font-family: Roboto;
+    margin: 5vmax auto;
+    padding: 1vmax;
+    color: rgb(0, 0, 0, 0.7);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vmax auto;
+    width: 80%;
+    justify-content: center;
+    max-width: 100%;
+}

@@ -1,0 +1,37 @@
+.myOrdersPage {
+
+    margin-top: 100px;
+
+
+    table {
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    thead {
+        background-color: tomato;
+    }
+
+    th {
+        width: 15px;
+        font: 500 1.6vmax "Roboto";
+        text-align: start;
+        padding: 10px;
+        color: white;
+    }
+
+    td {
+        padding: 4.5px;
+        font: 400 1.2vmax "Roboto";
+        border-bottom: 2px solid rgb(234, 227, 227);
+    }
+
+    #myOrdersHeading {
+        display: flex;
+        justify-content: center;
+        font: 400 2vmax "Roboto";
+        letter-spacing: 1px;
+    }
+
+}
